@@ -1,0 +1,663 @@
+/* General */
+body {
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+    min-width: 1213px;
+    width: auto !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Logo */
+.logo {
+    margin-right: 10px;
+}
+
+/* Tables */
+table.light tr th:first-child {
+    border-radius: 5px 0 0 0;
+}
+
+table.light tr th {
+    border-radius: 0;
+}
+
+table.light thead tr th {
+    background: linear-gradient(45deg, #ff6f61, #ff9e80);
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 15px;
+    border-bottom: 2px solid #ff6f61;
+    box-shadow: 0 0 10px #ff6f61;
+}
+
+table.light tr td {
+    padding: 15px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 700;
+    background: rgba(255, 111, 97, 0.1);
+    vertical-align: middle;
+    border-bottom: 1px solid #444;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+table.light tr:hover td {
+    background: rgba(255, 111, 97, 0.2);
+    box-shadow: 0 0 10px #ff9e80;
+}
+
+/* Minestat Header */
+.minestat h3 {
+    text-align: left;
+    font-size: 26px;
+    font-weight: 700;
+    padding: 10px 0;
+    margin: 0 0 20px 0;
+    color: #ff6f61;
+    text-shadow: 2px 2px #ff9e80;
+}
+
+/* Marketplace */
+.marketplace {
+    padding-bottom: 100px;
+}
+
+/* Divider */
+.divider {
+    margin: 20px 0;
+    border-top: 2px solid #ff6f61;
+    box-shadow: 0 0 5px #ff6f61;
+}
+
+.divider_small {
+    margin: 5px 0;
+    border-top: 1px solid #ff9e80;
+    box-shadow: 0 0 5px #ff9e80;
+}
+
+/* Progress */
+.progress {
+    height: 1.5rem;
+    background: #ff6f61;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #ff6f61;
+}
+
+/* Buttons */
+.beauty_button, .beauty_button_mid, .beauty_button_big {
+    padding: 15px;
+    color: #ffffff;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.beauty_button:hover, .beauty_button_mid:hover, .beauty_button_big:hover {
+    background-color: #ff9e80;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ff9e80;
+}
+
+.beauty_button {
+    width: 48%;
+}
+
+.beauty_button_mid {
+    width: 36%;
+}
+
+.beauty_button_big {
+    width: 97%;
+}
+
+/* Cards */
+.card {
+    width: 15.5rem;
+    margin: 10px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+    border-radius: 15px; /* Bordes más redondeados */
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace; /* Fuente estilo rigs de minería */
+    position: relative;
+    box-shadow: 0 0 15px #00ff00; /* Sombra de neón */
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; /* Sombra de texto de neón */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Más elevación al hacer hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 20px #00ff00; /* Sombra de neón más intensa */
+}
+
+.card::before, .card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, #00ff00, transparent);
+    animation: neon-border 2s linear infinite;
+}
+
+.card::before {
+    left: 0;
+    animation-delay: 0s;
+}
+
+.card::after {
+    right: 0;
+    animation-delay: 1s;
+}
+
+.owned_card {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 14px;
+    padding: 4px 8px; /* Ajuste de padding */
+    color: #ffffff;
+    background-color: #555;
+    display: block;
+    border-radius: 0 0 10px 0;
+    text-shadow: 0 0 5px #ffffff; /* Sombra de texto de neón */
+    box-shadow: 0 0 10px #555; /* Sombra de neón para owned_card */
+}
+
+@keyframes neon-border {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+
+/* Mining Animation */
+.mining-anim {
+    border-radius: 10px;
+    background: linear-gradient(to right, #000, #444);
+    padding: 15px;
+    width: 730px;
+    height: 480px;
+    display: inline-block;
+    float: left;
+    margin-bottom: 20px;
+    color: #b0bec5;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    box-shadow: 0 0 15px #00ff00;
+}
+
+.console-text {
+    display: inline-block;
+    height: 230px;
+    color: #00ff00;
+    overflow-y: scroll;
+}
+
+.static-anim {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    width: 100%;
+}
+
+.static-anim ul {
+    list-style-type: none;
+}
+
+/* Network and PvP Stats */
+.network-stat, .pvp-stat {
+    display: inline-block;
+    position: absolute;
+    font-size: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+}
+
+.network-stat {
+    width: 55%;
+    top: 0;
+}
+
+.pvp-stat {
+    width: 40%;
+    right: 0;
+}
+
+/* Dos Mining */
+.dos-mining {
+    width: 100%;
+    background-color: #222; /* Fondo más oscuro */
+    color: #ffd54f;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 20px; /* Más padding para un look más espacioso */
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    box-shadow: 0 0 20px #ffd54f; /* Sombra de neón más intensa */
+    font-family: 'Courier New', Courier, monospace; /* Fuente estilo rigs de minería */
+    text-shadow: 0 0 10px #ffd54f, 0 0 20px #ffd54f, 0 0 30px #ffd54f;
+    overflow: hidden; /* Oculta los desbordamientos */
+}
+
+.dos-mining::before, .dos-mining::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, #ffd54f, transparent);
+    animation: neon-border 2s linear infinite;
+}
+
+.dos-mining::before {
+    left: 0;
+    animation-delay: 0s;
+}
+
+.dos-mining::after {
+    right: 0;
+    animation-delay: 1s;
+}
+
+/* Balance and Production */
+#balance, #prodPerSec {
+    font-weight: 800;
+    font-size: 20px;
+    color: #ff6f61;
+    font-family: 'Courier New', Courier, monospace; /* Fuente estilo rigs de minería */
+    text-shadow: 0 0 10px #ff6f61, 0 0 20px #ff6f61, 0 0 30px #ff6f61; /* Sombra de neón más intensa */
+    position: relative;
+}
+
+#balance::before, #prodPerSec::before, #balance::after, #prodPerSec::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, #ff6f61, transparent);
+    animation: neon-border 2s linear infinite;
+}
+
+#balance::before, #prodPerSec::before {
+    left: 0;
+    animation-delay: 0s;
+}
+
+#balance::after, #prodPerSec::after {
+    right: 0;
+    animation-delay: 1s;
+}
+
+@keyframes neon-border {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+
+/* Claymore Colors */
+.claymore-green { color: #00e676; text-shadow: 0 0 5px #00e676; }
+.claymore-blue { color: #00b0ff; text-shadow: 0 0 5px #00b0ff; }
+.claymore-purple { color: #d500f9; text-shadow: 0 0 5px #d500f9; }
+.claymore-gold { color: #ffab00; text-shadow: 0 0 5px #ffab00; }
+.claymore-red { color: #ff1744; text-shadow: 0 0 5px #ff1744; }
+
+/* System Stat */
+.system_stat {
+    height: 220px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+/* Headers */
+.h6, h6 {
+    font-size: 1rem;
+    color: #ff6f61;
+}
+
+/* Jumbotron */
+.jumbotron {
+    padding: 2rem 2rem;
+    background: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5), 0 0 15px #00ff00;
+    color: #ffffff;
+}
+
+/* Leaderboard */
+.leaderboard {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #003084; /* Color de fondo más oscuro */
+    border-radius: 15px; /* Bordes más redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5), 0 0 20px #003084; /* Sombra de neón verde más intensa */
+    color: #031637;
+    font-family: 'Courier New', Courier, monospace; /* Fuente estilo rigs de minería */
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; /* Sombra de texto de neón */
+    font-weight: bold;
+    position: relative;
+    overflow: hidden; /* Oculta los desbordamientos */
+}
+
+.leaderboard::before, .leaderboard::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, #00ff00, transparent);
+    animation: neon-border 2s linear infinite;
+}
+
+.leaderboard::before {
+    left: 0;
+    animation-delay: 0s;
+}
+
+.leaderboard::after {
+    right: 0;
+    animation-delay: 1s;
+}
+
+@keyframes neon-border {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+
+/* Market Buttons */
+.market_buttons {
+    position: absolute;
+    bottom: -10px;
+}
+
+/* ICO Box */
+.ico_box {
+    display: inline-block;
+    height: 480px;
+    background-color: #555;
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    background-image: url('../images/ico2.png');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px #ff6f61;
+}
+
+.ico_box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 0 15px #ff6f61;
+}
+
+.ico_box h5, .ico_box h6 {
+    margin: auto;
+    text-align: center;
+}
+
+.pull-mid {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+.ico_countdown {
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    font-size: 30px;
+    color: #ff6f61;
+    text-shadow: 0 0 10px #ff6f61;
+}
+
+.ico_pot_eth, .ico_pot_yours {
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    font-size: 17px;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace; /* Fuente estilo rigs de minería */
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; /* Sombra de neón */
+    font-weight: bold;
+}
+
+
+#left_pct, #demo, #right_pct {
+    display: inline-block;
+    width: 33%;
+    font-size: 16px; /* Tamaño de letra más grande */
+    color: #ff6f61;
+    text-align: center; /* Alineación centrada */
+    font-family: 'Courier New', Courier, monospace; /* Fuente estilo rigs de minería */
+    font-weight: bold;
+    text-shadow: 0 0 10px #ff6f61, 0 0 20px #ff6f61, 0 0 30px #ff6f61; /* Sombra de neón */
+    position: relative;
+    padding: 10px; /* Añade padding para más espacio */
+    box-shadow: 0 0 15px #ff6f61; /* Sombra de neón */
+    border-radius: 10px; /* Bordes redondeados */
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+}
+
+#left_pct::before, #demo::before, #right_pct::before, #left_pct::after, #demo::after, #right_pct::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, #ff6f61, transparent);
+    animation: neon-border 2s linear infinite;
+}
+
+#left_pct::before, #demo::before, #right_pct::before {
+    left: 0;
+    animation-delay: 0s;
+}
+
+#left_pct::after, #demo::after, #right_pct::after {
+    right: 0;
+    animation-delay: 1s;
+}
+
+
+/* ICO Pot Text */
+.ico_pot {
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    font-size: 26px;
+    margin-top: -5px;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace; /* Fuente estilo rigs de minería */
+    text-shadow: 0 0 10px #ff6f61, 0 0 20px #ff6f61, 0 0 30px #ff6f61;
+    font-weight: bold;
+}
+
+.ico_pot_under {
+    text-align: center;
+    width: 100%;
+    font-size: 16px; /* Tamaño de letra más grande */
+    margin-top: 10px; /* Ajuste de margen superior */
+    margin-bottom: 20px; /* Ajuste de margen inferior */
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace; /* Fuente estilo rigs de minería */
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; /* Sombra de texto de neón */
+    position: relative;
+    padding: 10px; /* Añade padding para más espacio */
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 15px #00ff00; /* Sombra de neón */
+}
+
+.ico_pot_under::before, .ico_pot_under::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, #00ff00, transparent);
+    animation: neon-border 2s linear infinite;
+}
+
+.ico_pot_under::before {
+    left: 0;
+    animation-delay: 0s;
+}
+
+.ico_pot_under::after {
+    right: 0;
+    animation-delay: 1s;
+}
+
+
+.ico-progress {
+    width: 90%;
+    margin: auto;
+    background: #ff6f61;
+    height: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #ff6f61;
+}
+
+.ico-buy-button, #debug_newico {
+    margin-bottom: 5px;
+}
+
+.green-background {
+    background-color: #006700;
+}
+
+/* Slider */
+.slidecontainer {
+    width: 100%;
+}
+
+/* Slider */
+.slidecontainer {
+    width: 100%;
+    margin: 20px 0;
+    position: relative;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 15px;
+    background: #222;
+    border-radius: 10px;
+    outline: none;
+    opacity: 1;
+    transition: opacity 0.8s;
+    box-shadow: 0 0 20px #00ff00;
+    position: relative;
+}
+
+.slider:hover {
+    opacity: 1;
+    background: #444;
+    box-shadow: 0 0 30px #00ff00;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(45deg, #ff6f61, #ff9e80);
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #ff6f61, 0 0 20px #ff9e80;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(45deg, #ff6f61, #ff9e80);
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #ff6f61, 0 0 20px #ff9e80;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.slider::-webkit-slider-thumb:hover, .slider::-moz-range-thumb:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ff9e80, 0 0 30px #ff6f61;
+}
+
+.slider::-webkit-slider-thumb:active, .slider::-moz-range-thumb:active {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px #ff6f61, 0 0 40px #ff9e80;
+}
+
+/* Neon Border Animation */
+@keyframes neon-border {
+    0% {
+        box-shadow: 0 0 5px #ff6f61, 0 0 10px #ff6f61, 0 0 15px #ff6f61, 0 0 20px #ff6f61;
+    }
+    50% {
+        box-shadow: 0 0 10px #ff6f61, 0 0 20px #ff6f61, 0 0 30px #ff6f61, 0 0 40px #ff6f61;
+    }
+    100% {
+        box-shadow: 0 0 5px #ff6f61, 0 0 10px #ff6f61, 0 0 15px #ff6f61, 0 0 20px #ff6f61;
+    }
+}
+
+.slider-container::before, .slider-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, #ff6f61, transparent);
+    animation: neon-border 2s linear infinite;
+}
+
+.slider-container::before {
+    left: 0;
+    animation-delay: 0s;
+}
+
+.slider-container::after {
+    right: 0;
+    animation-delay: 1s;
+}

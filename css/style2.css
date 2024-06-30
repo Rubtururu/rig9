@@ -1,0 +1,389 @@
+/* General */
+body {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    min-width: 1213px;
+    width: auto !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Logo */
+.logo {
+    margin-right: 10px;
+}
+
+/* Tables */
+table.light tr th:first-child {
+    border-radius: 5px 0 0 0;
+}
+
+table.light tr th {
+    border-radius: 0;
+}
+
+table.light thead tr th {
+    background: linear-gradient(45deg, #ff6f61, #ff9e80);
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 15px;
+    border-bottom: 2px solid #ff6f61;
+}
+
+table.light tr td {
+    padding: 15px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 700;
+    background: rgba(255, 111, 97, 0.1);
+    vertical-align: middle;
+    border-bottom: 1px solid #444;
+}
+
+/* Table Hover Effect */
+table.light tr:hover td {
+    background: rgba(255, 111, 97, 0.2);
+    transition: background 0.3s;
+}
+
+/* Minestat Header */
+.minestat h3 {
+    text-align: left;
+    font-size: 26px;
+    font-weight: 700;
+    padding: 10px 0;
+    margin: 0 0 20px 0;
+    color: #ff6f61;
+    text-shadow: 2px 2px #ff9e80;
+}
+
+/* Marketplace */
+.marketplace {
+    padding-bottom: 100px;
+}
+
+/* Divider */
+.divider {
+    margin: 20px 0;
+    border-top: 2px solid #ff6f61;
+}
+
+.divider_small {
+    margin: 5px 0;
+    border-top: 1px solid #ff9e80;
+}
+
+/* Progress */
+.progress {
+    height: 1.5rem;
+    background: #ff6f61;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Buttons */
+.beauty_button, .beauty_button_mid, .beauty_button_big {
+    padding: 15px;
+    color: #ffffff;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.beauty_button:hover, .beauty_button_mid:hover, .beauty_button_big:hover {
+    background-color: #ff9e80;
+    transform: scale(1.05);
+}
+
+.beauty_button {
+    width: 48%;
+}
+
+.beauty_button_mid {
+    width: 36%;
+}
+
+.beauty_button_big {
+    width: 97%;
+}
+
+/* Cards */
+.card {
+    width: 15.5rem;
+    margin: 10px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #ffffff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.owned_card {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 16px;
+    padding: 4px;
+    color: #ffffff;
+    background-color: #555;
+    display: block;
+    width: 42px;
+    height: 30px;
+    border-radius: 0 0 10px 0;
+}
+
+/* Mining Animation */
+.mining-anim {
+    border-radius: 10px;
+    background: linear-gradient(to right, #000, #444);
+    padding: 15px;
+    width: 730px;
+    height: 430px;
+    display: inline-block;
+    float: left;
+    margin-bottom: 20px;
+    color: #b0bec5;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+}
+
+.console-text {
+    display: inline-block;
+    height: 230px;
+    color: #00ff00;
+    overflow-y: scroll;
+}
+
+.static-anim {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    width: 100%;
+}
+
+.static-anim ul {
+    list-style-type: none;
+}
+
+/* Network and PvP Stats */
+.network-stat, .pvp-stat {
+    display: inline-block;
+    position: absolute;
+}
+
+.network-stat {
+    width: 55%;
+    top: 0;
+}
+
+.pvp-stat {
+    width: 40%;
+    right: 0;
+}
+
+/* Dos Mining */
+.dos-mining {
+    width: 100%;
+    background-color: #ffd54f;
+    color: #000;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Balance and Production */
+#balance, #prodPerSec {
+    font-weight: 800;
+    font-size: 20px;
+    color: #ff6f61;
+}
+
+/* Claymore Colors */
+.claymore-green { color: #00e676; }
+.claymore-blue { color: #00b0ff; }
+.claymore-purple { color: #d500f9; }
+.claymore-gold { color: #ffab00; }
+.claymore-red { color: #ff1744; }
+
+/* System Stat */
+.system_stat {
+    height: 220px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+/* Headers */
+.h6, h6 {
+    font-size: 1rem;
+    color: #ff6f61;
+}
+
+/* Jumbotron */
+.jumbotron {
+    padding: 2rem 2rem;
+    background: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}
+
+/* Leaderboard */
+.leaderboard {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}
+
+/* Market Buttons */
+.market_buttons {
+    position: absolute;
+    bottom: -10px;
+}
+
+/* ICO Box */
+.ico_box {
+    display: inline-block;
+    height: 320px;
+    background-color: #555;
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    background-image: url('../images/ico2.png');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ico_box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.ico_box h5, .ico_box h6 {
+    margin: auto;
+    text-align: center;
+}
+
+.pull-mid {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+.ico_countdown {
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    font-size: 30px;
+    color: #ff6f61;
+}
+
+.ico_pot_eth, .ico_pot_yours {
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+#left_pct, #demo, #right_pct {
+    display: inline-block;
+    width: 33%;
+    font-size: 12px;
+    color: #ff6f61;
+}
+
+.ico_pot {
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    font-size: 26px;
+    margin-top: -5px;
+    color: #ffffff;
+}
+
+.ico_pot_under {
+    text-align: center;
+    width: 100%;
+    font-size: 13px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.ico-progress {
+    width: 90%;
+    margin: auto;
+    background: #ff6f61;
+    height: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.ico-buy-button, #debug_newico {
+    margin-bottom: 5px;
+}
+
+.green-background {
+    background-color: #006700;
+}
+
+/* Slider */
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .8s;
+    border-radius: 5px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb, .slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #ff6f61;
+    cursor: pointer;
+    border-radius: 50%;
+}
