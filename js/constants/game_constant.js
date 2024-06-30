@@ -36,15 +36,15 @@ rigData[8] = RigData(100000000000000, 30000000, 50000000000000,  0,          256
 
 rigData = [];
 
-rigData[0] = {price: 128,    eth:  0.001,     prod: 1,       upgrade: 64,   limit: 64};
-rigData[1] = {price: 1024,     eth:  0.002,      prod: 64,       upgrade: 512,   limit: 64};
-rigData[2] = {price: 204800,    eth:  0.003,       prod: 1024,       upgrade: 102400,   limit: 128};
-rigData[3] = {price: 25600000,    eth:  0.004,       prod: 8192,       upgrade: 12800000,   limit: 128};
-rigData[4] = {price: 30000000000,   eth:  0.005,        prod: 65536,       upgrade: 30000000000,   limit: 256};
-rigData[5] = {price: 30000000000,  eth:  0.006,         prod: 100000,       upgrade: 10000000000,   limit: 256};
-rigData[6] = {price: 300000000000,   eth:  0.007,        prod: 500000,       upgrade: 100000000000,   limit: 256};
-rigData[7] = {price: 50000000000000,   eth:  0.008,        prod: 3000000,       upgrade: 12500000000000,   limit: 256};
-rigData[8] = {price: 100000000000000,  eth:  0.009,         prod: 30000000,       upgrade: 50000000000000,   limit: 256};
+rigData[0] = {price: 128,    eth:  0.0001,     prod: 10,       upgrade: 64,   limit: 64};
+rigData[1] = {price: 1024,     eth:  0.003,      prod: 40,       upgrade: 512,   limit: 64};
+rigData[2] = {price: 204800,    eth:  0.0009,       prod: 140,       upgrade: 102400,   limit: 128};
+rigData[3] = {price: 25600000,    eth:  0.0027,       prod: 460,       upgrade: 12800000,   limit: 128};
+rigData[4] = {price: 30000000000,   eth:  0.0081,        prod: 1450,       upgrade: 30000000000,   limit: 256};
+rigData[5] = {price: 30000000000,  eth:  0.0243,         prod: 4500,       upgrade: 10000000000,   limit: 256};
+rigData[6] = {price: 300000000000,   eth:  0.0729,        prod: 14000,       upgrade: 100000000000,   limit: 256};
+rigData[7] = {price: 50000000000000,   eth:  0.2187,        prod: 43000,       upgrade: 12500000000000,   limit: 256};
+rigData[8] = {price: 100000000000000,  eth:  0.6561,         prod: 140000,       upgrade: 50000000000000,   limit: 256};
 
 
 /*
@@ -54,9 +54,9 @@ rigData[8] = {price: 100000000000000,  eth:  0.009,         prod: 30000000,     
 */
 boostData = [];
 
-boostData[0] = {bonus: 30, price: 0.001};
-boostData[1] = {bonus: 50, price: 0.002};
-boostData[2] = {bonus: 100, price: 0.003};
+boostData[0] = {bonus: 30, price: 0.3};
+boostData[1] = {bonus: 50, price: 0.5};
+boostData[2] = {bonus: 100, price: 1.0};
 
 /*
         troopData[0] = TroopData(1,     0,     100000,   0);
